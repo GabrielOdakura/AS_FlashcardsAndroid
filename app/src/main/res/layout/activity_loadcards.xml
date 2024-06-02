@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Carregar Flashcards"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o nome de um arquivo"
+                android:textColorHint="@color/black"
+                android:id="@+id/et_NomArq"
+                android:layout_marginBottom="10sp">
+            </EditText>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:id="@+id/btn_Salvar"
+                android:text="Salvar Flashcard"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5sp">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:id="@+id/btn_Carregar"
+                android:text="Carregar Flashcards"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5sp">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:id="@+id/btn_Remover"
+                android:text="Remover Flashcard"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5sp">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:id="@+id/btn_GerarPacoteBase"
+                android:text="Gerar Pacote Base"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5sp">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:id="@+id/btn_Voltar"
+                android:text="Voltar Menu"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5sp">
+            </Button>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite uma pergunta"
+                android:textColorHint="@color/black"
+                android:id="@+id/et_Perg"
+                android:layout_marginBottom="10sp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_Resp"
+                android:hint="Digite uma resposta"
+                android:textColorHint="@color/black"
+                android:layout_marginBottom="10sp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite se estará habilitado"
+                android:textColorHint="@color/black"
+                android:id="@+id/et_Hab"
+                android:layout_marginBottom="10sp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite um ID para Remover"
+                android:textColorHint="@color/black"
+                android:id="@+id/et_Rem"
+                android:layout_marginBottom="10sp">
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
